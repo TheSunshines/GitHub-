@@ -1,0 +1,23 @@
+yum install git
+git status  //随时查看git信息  每天第一次查看之前工作做哪了
+git show +commit号（可以是前几位）//查看改动的细节
+git log   //查看提交的日志  commit号都是随机的
+git init .  //initialize初始化git对当前目录
+
+git add +文件名   //本地代码 -->> 待提交列表
+git rm +文件名 //本地仓库 -->> 待提交列表
+git commit -m +提示信息注释  //待提交列表 -->>本地仓库 
+git checkout --文件名 //撤销本地未提交的改动
+git reset --soft HEAD~1//最上面开始撤销 本地仓库 -->> 待提交列表 (如果没有soft，本地仓库-->>本地列表)
+vim .gitignore  在.gitignore文件中加入想要忽略的文件
+
+git branch  查看本地的分支
+git branch +分支名  创建新的分支
+git checkout +分支名 切换到该分支
+（当在其他分支上改动，出现新的commit，不影响master）
+git branch -d +分支名  删除该分支
+
+
+合并：
+切换到主分支master，
+git merge +其他分支名    其他分支上的commit合并到master上
