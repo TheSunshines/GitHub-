@@ -6,7 +6,7 @@ git diff 未暂存的文件与之前暂存区域的差别
 git diff -cached/-staged 暂存的文件与之前提交区域的差别
 
 git add + 文件名 //本地代码-》待提交列表
-git rm + 文件名 // 删除待提交列表中的
+rm + 文件名  ---》》》》 git rm + 文件名 // 删除待提交列表中的
 git rm --cached +文件名 //希望保留在当前工作目录中
 git commit -m + 提示信息 //待提交列表-》本地仓库
 git commit -a + 提示信息 //本地代码--》本地仓库
