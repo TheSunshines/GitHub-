@@ -1,0 +1,27 @@
+git init. //对当前目录初始化
+git status //随时查看git信息
+git show + commit号（随机的） //查看改动的细节
+git log //查看提交的日志信息
+
+git add + 文件名 //本地代码-》待提交列表
+git rm + 文件名 // 本地代码-》待提交列表
+git commit -m + 提示信息 //待提交列表-》本地仓库
+git checkout -- 文件名  //撤销本地修改文件后未提交(还未提交到待提交列表中)的操作  待提交列表-》本地代码
+git reset --soft HEAD~1 最上面的开始撤销，本地仓库-》待提交列表（如果没有soft，本地仓库-》本地代码）
+vim .gitignore //加入忽略的文件 
+git remote add origin + URL //将本地仓库推送到远程仓库中去
+git push -u origin master	
+git push(上传)/pull  + origin master（下载，首次用clone + URL）
+
+git branch 查看本地分支
+git branch -b +分支名 //创建新分支
+git checkout + 分支名 // 切换到该分支
+git branch -d + 分支名 //删除分支
+git merge -d +分支名  //将其他分支合并到master分支上(切换到master上执行的命令)
+
+<<<<<<
+
+======
+
+>>>>>>
+合并冲突时，需要手动调节冲突，然后add commit push
