@@ -2,10 +2,14 @@ git init. //对当前目录初始化
 git status //随时查看git信息
 git show + commit号（随机的） //查看改动的细节
 git log //查看提交的日志信息
+git diff 未暂存的文件与之前暂存区域的差别
+git diff -cached/-staged 暂存的文件与之前提交区域的差别
 
 git add + 文件名 //本地代码-》待提交列表
-git rm + 文件名 // 本地代码-》待提交列表
+git rm + 文件名 // 删除待提交列表中的
+git rm --cached +文件名 //希望保留在当前工作目录中
 git commit -m + 提示信息 //待提交列表-》本地仓库
+git commit -a + 提示信息 //本地代码--》本地仓库
 git checkout -- 文件名  //撤销本地修改文件后未提交(还未提交到待提交列表中)的操作  待提交列表-》本地代码
 git reset --soft HEAD~1 最上面的开始撤销，本地仓库-》待提交列表（如果没有soft，本地仓库-》本地代码）
 vim .gitignore //加入忽略的文件 
