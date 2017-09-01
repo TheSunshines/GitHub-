@@ -3,7 +3,7 @@ git status //随时查看git信息
 git show + commit号（随机的） //查看改动的细节
 
 git log //查看提交的日志信息
-git log -p //每次提交内容差异 -n//最近几次的更新
+git log -p //每次提交的改动内容 -n//最近几次的更新
 git log --stat //简要的増改行数的统计
 git log --pretty=oneline //每次提交放在一行显示
 git log --pretty=format:"%h %an %ar : %s" //短哈希 作者  时间  提示信息
@@ -11,9 +11,8 @@ git log --graph //每个提交所在分支及其分化衍合的情况
 2018年10月期间，gitster提交的但未合并的测试脚本（位于项目的t/目录下的文件）：
 git log --pretty="%h : %s" --author=gitster --since="2018-10-01" --before="2018-11-01" --no-merges -- t/
 
-git diff 未暂存的文件与之前暂存区域的差别
-git diff --cached/--staged 暂存的文件与之前提交区域的差别
-
+git diff 未暂存的（本地代码）文件与之前暂存区域（待提交列表的快照之间）的差别
+git diff --cached/--staged 暂存（待提交列表）的文件与之前提交区域（本地仓库的快照之间）的差别
 
 git commit --amend //重新提交
 git add + 文件名 //本地代码-》待提交列表
