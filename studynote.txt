@@ -14,9 +14,9 @@ git log --pretty="%h : %s" --author=gitster --since="2018-10-01" --before="2018-
 git diff 未暂存的（本地代码）文件与之前暂存区域（待提交列表的快照之间）的差别
 git diff --cached/--staged 暂存（待提交列表）的文件与之前提交区域（本地仓库的快照之间）的差别
 
-git commit --amend //重新提交
-git add + 文件名 //本地代码-》待提交列表
-rm + 文件名  ---》》》》 git rm + 文件名 // 删除待提交列表中的
+git commit --amend //重新提交（想要重新修改提交提示信息或者提交时忘记暂存某些修改，先补上修改然后再运行此命令，最终得到一个提交）
+git add + 文件名 //本地代码-->>>>待提交列表
+rm + 文件名  -->>>> git rm + 文件名 // 删除待提交列表中的
 git rm --cached +文件名 //希望保留在当前工作目录中
 git mv +文件名 //改名字
 git commit -m + 提示信息 //待提交列表-》本地仓库
