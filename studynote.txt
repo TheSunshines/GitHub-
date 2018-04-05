@@ -27,6 +27,7 @@ git reset --soft HEAD~1 工作区和暂存区不变，引用向前回退一次（当对最新的提交说明
 git commit --amend //重新提交（想要重新修改提交提示信息或者提交时忘记暂存某些修改，先补上修改然后再运行此命令，最终得到一个提交）
 （$ git reset --soft HEAD^	$ git commit -e -F .git/COMMIT_EDITMSG保存了上次的提交日志）
 git reset --hard HEAD~1 引用，工作区，暂存区都向前回退一次
+git reflog 记录了每一次的提交commit号，可以利用此命令来找回误操作的reset前的版本。
 vim .gitignore //加入忽略的文件 
 git remote -v //当前配置有哪些远程仓库 对应仓库的URL
 git remote add ”name“ + URL //添加一个新的远程仓库
