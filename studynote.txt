@@ -2,7 +2,6 @@ git init. //对当前目录初始化
 git status //随时查看git信息
 git show + commit号（随机的） //查看改动的细节
 
-
 git log //查看提交的日志信息
 git log -p //每次提交的改动内容 -n//最近几次的更新
 git log --stat //简要的増改行数的统计
@@ -34,7 +33,6 @@ git remote -v //当前配置有哪些远程仓库 对应仓库的URL
 git remote add ”name“ + URL //添加一个新的远程仓库
 git push/poll  [远程仓库] [本地分支] 上传/下载	
 （下载，首次用clone + URL）
-
 
 git branch 查看本地分支
 git branch -b +分支名 //创建新分支
